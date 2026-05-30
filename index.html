@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divit Labs | Empowering Digital Vitality</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand img {
+      height: 52px;
+      width: auto;
+    }
+
+    .brand span {
+      font-size: 26px;
+      font-weight: 800;
+      color: #6d28d9;
+    }
+
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: #475569;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #6d28d9;
+    }
+
+    .hero {
+      padding: 100px 8%;
+      text-align: center;
+      background: linear-gradient(135deg, #f3e8ff, #ccfbf1, #fff7ed);
+    }
+
+    .hero img {
+      width: 170px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: #5b21b6;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 760px;
+      margin: auto;
+      color: #475569;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 8px 18px;
+      border-radius: 999px;
+      background: #ffffff;
+      color: #0f766e;
+      font-weight: 700;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    section {
+      padding: 70px 8%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 34px;
+      color: #6d28d9;
+      margin-bottom: 18px;
+    }
+
+    .intro {
+      max-width: 850px;
+      font-size: 18px;
+      color: #475569;
+    }
+
+    .cards {
+      margin-top: 34px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+      border-top: 4px solid #14b8a6;
+    }
+
+    .card h3 {
+      color: #0f766e;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .vision {
+      background: white;
+      border-radius: 24px;
+      padding: 45px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact-box {
+      margin-top: 26px;
+      display: inline-block;
+      background: white;
+      padding: 28px 40px;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    }
+
+    .contact-box a {
+      color: #6d28d9;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 8%;
+      background: #6d28d9;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      nav a {
+        margin: 0 8px;
+        font-size: 14px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .brand img {
+        height: 44px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="brand">
+      <img src="divitlog.png" alt="Divit Labs Logo">
+      <span>Divit Labs</span>
+    </div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#vision">Vision</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="divitlog.png" alt="Divit Labs Logo">
+    <div class="tag">AI · Software . Consulting </div>
+    <h1>Empowering Digital Vitality</h1>
+    <p>
+      Building intelligent software solutions, AI-powered systems,Product Support,Consulting,
+      healthcare technology, and modern digital products for real-world impact.
+    </p>
+  </section>
+
+  <section id="about">
+    <h2>About Divit Labs</h2>
+    <p class="intro">
+      Divit Labs is a technology-focused company creating scalable, reliable,
+      and user-centric digital solutions across artificial intelligence,
+      healthcare, automation, enterprise systems, and software engineering.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>AI Solutions</h3>
+        <p>Machine learning, NLP systems, and intelligent automation for practical business use cases.</p>
+      </div>
+
+      <div class="card">
+        <h3>Healthcare Technology</h3>
+        <p>Digital healthcare tools and AI-assisted solutions designed to simplify medical information.</p>
+      </div>
+
+      <div class="card">
+        <h3>Software Development</h3>
+        <p>Modern web, mobile, backend, and API development using scalable technology architecture.</p>
+      </div>
+
+      <div class="card">
+        <h3>Enterprise Consulting</h3>
+        <p>Enterprise systems support, database-driven applications, integrations, and workflow solutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="vision">
+    <div class="vision">
+      <h2>Engineering Intelligent Futures</h2>
+      <p>
+        We believe technology should simplify complexity, empower innovation,
+        and create meaningful digital experiences for businesses and individuals.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Let’s build intelligent digital solutions together.</p>
+
+    <div class="contact-box">
+      <p>Email: <a href="mailto:deplocode@gmail.com">deplocode@gmail.com</a></p>
+      <p>Location: Thrissur, Kerala, India</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Divit Labs · Empowering Digital Vitality
+  </footer>
+
+</body>
+</html>
