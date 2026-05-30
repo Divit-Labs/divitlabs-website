@@ -82,7 +82,27 @@
       margin: auto;
       color: #475569;
     }
+.hero-right {
+    position: relative;
+}
 
+.hero-right::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    right: 80px;
+    bottom: 60px;
+    border-radius: 50%;
+    background: rgba(255,107,0,0.12);
+    filter: blur(80px);
+    z-index: 0;
+}
+
+.hero-right img {
+    position: relative;
+    z-index: 1;
+}
     .tag {
       display: inline-block;
       margin-bottom: 18px;
@@ -209,15 +229,26 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <img src="divitlog.png" alt="Divit Labs Logo">
-    <div class="tag">AI · Software . Consulting </div>
-    <h1>Empowering Digital Vitality</h1>
-    <p>
-      Building intelligent software solutions, AI-powered systems,Product Support,Consulting,
-      healthcare technology, and modern digital products for real-world impact.
-    </p>
-  </section>
+<section class="hero">
+
+    <div class="hero-left">
+        <div class="tag">AI · Healthcare · Software</div>
+
+        <h1>Empowering Digital Vitality</h1>
+
+        <p class="subtitle">
+            Building intelligent software solutions, AI-powered systems,
+            healthcare technology, and modern digital products for real-world impact.
+        </p>
+
+        <a href="#contact" class="btn">Contact Us</a>
+    </div>
+
+    <div class="hero-right">
+        <img src="img1.png" alt="Technology Illustration">
+    </div>
+
+</section>
 
   <section id="about">
     <h2>About Divit Labs</h2>
